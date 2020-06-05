@@ -1,9 +1,32 @@
 .navbar-dark{
   background-color: rgb(255, 255, 81);
+  font-weight: bolder;
 }
 .nav-link{
   color: black !important;
+  font-weight: bolder;
 }
 .navbar-brand{
   color: black !important;
+}
+.trail{
+  background-image: url('/food/src/assets/background1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.row-container{
+ height: 600px !important;
+ margin: 0px !important;
+ width: 100%;
+}
+.caption{
+  color: whitesmoke;
+  font-size: 40px;
+}
+.caption2{
+  color: whitesmoke;
+ 
+  font-size: 30px;
 }

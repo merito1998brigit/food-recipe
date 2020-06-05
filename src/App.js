@@ -5,10 +5,14 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
+    
+      <div className="jumbotron-fluid">
         <Header/>  
         <Home/>  
-  </div>
+        </div>
+    </React.Fragment>
+  
   );
 }
 

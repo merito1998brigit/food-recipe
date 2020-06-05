@@ -5,7 +5,7 @@ class Header extends Component{
  
     render(){
         return(
-            <Navbar dark  expand="md">
+            <Navbar dark  expand="md" className="fixed-top">
                   <div className="container">
                            <NavbarBrand  className="mr-auto navbar-brand" href="/">
                                    Brito's Recipes
