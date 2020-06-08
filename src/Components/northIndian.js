@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {NORTHDISH} from '../Shares/northIndianRecipe';
 import { Card,CardBody,CardImg,CardTitle,CardText, Button } from 'reactstrap';
 function RenderItem({items}){
     return(
@@ -20,9 +19,13 @@ function RenderItem({items}){
     )
 }
 class NorthIndian extends Component {
+    constructor(props) {
+        super(props);
+        
+    }
+    
     render() {
-        const recipe = NORTHDISH;
-        const recipes = recipe.map((items) =>{
+        const recipes = this.props.northrecipe.map((items) =>{
             return(
                 <div key={items.id} className="col-12 col-md-5  cards">
                 <RenderItem items={items} />

@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import Cusine from './Cusines';
-import SouthIndian from './SouthIndian';
-import Italian from './Italian';
-import NorthIndian from './NorthIndian';
 import background1 from '../assets/background1.jpg';
 
 
 
 class Home extends Component {
+     constructor(props) {
+          super(props);
+          this.state={}
+     }
+     
     render() {
         return (
             <React.Fragment>
@@ -35,17 +37,9 @@ class Home extends Component {
                      
              </div>
              <div className="container-fluid">
-                  <Cusine/>
+                  <Cusine cusine={this.props.cusine}/>
              </div>
-            <div className="container-fluid">
-                  <SouthIndian/>
-             </div>
-             <div className="container-fluid">
-                  <NorthIndian/>
-             </div>
-             <div className="container-fluid">
-                  <Italian/>
-             </div>
+         
              </React.Fragment>
         );
     }

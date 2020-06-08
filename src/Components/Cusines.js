@@ -1,5 +1,4 @@
 import React from 'react';
-import {CUSINE} from '../Shares/cusineType';
 import { Card , CardImg, CardFooter} from 'reactstrap';
 
 function RenderMenu({dish}){
@@ -16,8 +15,7 @@ function RenderMenu({dish}){
     )
 }
 
-function Cusines(props) {
-    const cusine = CUSINE;
+function Cusines({cusine}) {
     const menu = cusine.map((dish) =>{
         return(
             <div key={dish.id} className="col-12 col-md-5  cards">

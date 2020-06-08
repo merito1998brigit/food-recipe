@@ -1,8 +1,7 @@
 import React from 'react';
-import Header from './Components/Header';
-import Home from './Components/Home'; 
+import MainComponent from './Components/MainComponent';
+import {BrowserRouter} from 'react-router-dom';
 
-import Footer  from './Components/Footer';
 
 import './App.css';
 
@@ -10,16 +9,13 @@ import './App.css';
 
 function App() {
   return (
+    <BrowserRouter>
     
-    
-      <div className="jumbotron-fluid">
-        <Header/>  
-        <Home/> 
-       
-        <Footer/>
-        </div>
+         <div >
+             <MainComponent/>
+         </div>
 
-  
+      </BrowserRouter>
   );
 }
 

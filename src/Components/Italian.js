@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {ITALIAN} from '../Shares/ItalianRecipe';
 import { Card,CardBody,CardImg,CardTitle,CardText, Button } from 'reactstrap';
 function RenderItem({items}){
     return(
@@ -20,9 +19,14 @@ function RenderItem({items}){
     )
 }
 class Italian extends Component {
+    constructor(props) {
+        super(props);
+        this.state={}
+    }
+    
     render() {
-        const recipe = ITALIAN;
-        const recipes = recipe.map((items) =>{
+        
+        const recipes = this.props.italianrecipe.map((items) =>{
             return(
                 <div key={items.id} className="col-12 col-md-5  cards">
                 <RenderItem items={items} />
