@@ -1,16 +1,16 @@
 import React from 'react';
 import {CUSINE} from '../Shares/cusineType';
-import { Card , CardImg,CardTitle , CardText, CardFooter,} from 'reactstrap';
+import { Card , CardImg, CardFooter} from 'reactstrap';
 
 function RenderMenu({dish}){
     return(
-           <Card className="shadow">
-                 <CardImg width="100%" height="350px" src={dish.image} alt={dish.name}/>
-                 <CardFooter className="text-center">
-                     <strong>
-                    <p>{dish.name}</p>
-                    </strong>
-                 </CardFooter>
+           <Card >
+                 <CardImg className="shadow" width="100%" height="280px" src={dish.image} alt={dish.name}/>
+                  <CardFooter className="cardname text-center text-white">
+                          <strong><p>{dish.name}</p></strong>
+                  </CardFooter>
+
+                
                  
            </Card>
     )
@@ -20,7 +20,7 @@ function Cusines(props) {
     const cusine = CUSINE;
     const menu = cusine.map((dish) =>{
         return(
-            <div key={dish.id} className="col-12 col-md-5 m-3">
+            <div key={dish.id} className="col-12 col-md-5  cards">
             <RenderMenu dish={dish} />
            </div>
         )

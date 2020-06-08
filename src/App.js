@@ -1,17 +1,24 @@
 import React from 'react';
 import Header from './Components/Header';
 import Home from './Components/Home'; 
+
+import Footer  from './Components/Footer';
+
 import './App.css';
+
+
 
 function App() {
   return (
-    <React.Fragment>
+    
     
       <div className="jumbotron-fluid">
         <Header/>  
-        <Home/>  
+        <Home/> 
+       
+        <Footer/>
         </div>
-    </React.Fragment>
+
   
   );
 }

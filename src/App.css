@@ -17,16 +17,50 @@
 
 }
 .row-container{
- height: 600px !important;
+ height: 550px !important;
  margin: 0px !important;
- width: 100%;
+ width: 100% !important;
 }
 .caption{
   color: whitesmoke;
   font-size: 40px;
+ padding-top: 100px !important;
+
 }
 .caption2{
   color: whitesmoke;
- 
+  padding:0px 10px 10px 10px;
   font-size: 30px;
+
+ 
 }
+.arrowbtn{
+ padding-bottom: 50px !important;
+}
+.down {
+  
+  font-size: 35px !important;
+  color: antiquewhite;
+ 
+}
+.cards{
+  padding: 50px !important;
+}
+.footer{
+  color: whitesmoke;
+  background-color: rgb(27, 27, 27);
+  padding: 60px;
+}
+.cardname{
+  height: 50px;
+  background-color: rgb(41, 41, 41);
+}
+.shadow{
+  border-radius: 0px !important;
+}
+.shadow2{
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
