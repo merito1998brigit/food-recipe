@@ -2,10 +2,7 @@
   background-color: rgb(255, 255, 81);
   font-weight: bolder;
 }
-{
-  
- color: black !important;
-}
+
 .nav-link{
   color: black !important;
   font-weight: bolder;
@@ -24,6 +21,10 @@
  height: 550px !important;
  margin: 0px !important;
  width: 100% !important;
+}
+.row-container2{
+  margin: 0px !important; 
+  padding-top: 50px;
 }
 .caption{
   color: whitesmoke;

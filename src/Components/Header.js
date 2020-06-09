@@ -27,7 +27,7 @@ class Header extends Component{
                        <Collapse isOpen={this.state.isNavOpen} navbar  className="justify-content-end">   
                            <Nav navbar>
                                         <NavItem className="mr-2">
-                                            <NavLink className="nav-link" to='/home'>
+                                            <NavLink  className="nav-link" to='/home'>
                                                  Home
                                             </NavLink>
                                         </NavItem>    
@@ -36,14 +36,14 @@ class Header extends Component{
                                                 About us
                                             </NavLink>
                                         </NavItem>     
-                                        <NavItem className="mr-2">    
-                                            <NavLink className="nav-link" to='/Cusines'>
+                                        <NavItem className="mr-2">     
+                                            <NavLink  className="nav-link" to='/cusine'>
                                             Cusines
                                             </NavLink>
                                         </NavItem> 
                                         <NavItem>    
-                                            <NavLink className="nav-link" to='/contactus'>
-                                                Contact Us
+                                            <NavLink className="nav-link" to='/addrecipes'>
+                                                Add Recipes
                                             </NavLink>
                                         </NavItem>
                                 </Nav>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Cusine from './Cusines';
 import background1 from '../assets/background1.jpg';
 
 
@@ -12,7 +11,6 @@ class Home extends Component {
      
     render() {
         return (
-            <React.Fragment>
             <div className="row-container row align-items-center justify-content-center text-center" style={{
                 backgroundImage: `url(${background1})`,
                 backgroundPosition: 'center',
@@ -36,11 +34,9 @@ class Home extends Component {
                           
                      
              </div>
-             <div className="container-fluid">
-                  <Cusine cusine={this.props.cusine}/>
-             </div>
+        
          
-             </React.Fragment>
+             
         );
     }
 }

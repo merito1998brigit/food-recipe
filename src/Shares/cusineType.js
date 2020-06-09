@@ -6,13 +6,13 @@ export const CUSINE =
 [
     {
         id:0,
-        name:'South Indian',
+        name:'SouthIndian',
         image:southindian,
-
+      
     },
     {
         id:1,
-        name:'North Indian',
+        name:'NorthIndian',
         image:northindian,
 
     },

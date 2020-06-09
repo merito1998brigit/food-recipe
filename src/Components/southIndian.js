@@ -34,6 +34,7 @@ class SouthIndian extends Component {
             )
         })
         return (
+            
             <div className="row d-flex justify-content-center mt-5">
                 {recipes}
             </div>
