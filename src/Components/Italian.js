@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Card,CardBody,CardImg,CardTitle,CardText, Button } from 'reactstrap';
+import { Card,CardBody,CardImg,CardTitle,CardText, Button,Breadcrumb,BreadcrumbItem } from 'reactstrap';
+import {Link} from 'react-router-dom';
+
 function RenderItem({items}){
     return(
         
@@ -34,9 +36,17 @@ class Italian extends Component {
             )
         })
         return (
-            <div className="row d-flex justify-content-center mt-5">
+            <div className="container-fluid">
+                <div className="row pt-5">
+                     <Breadcrumb className="position-fixed breadcrumb">
+                       <BreadcrumbItem><Link to='/cusine'>Cusines</Link></BreadcrumbItem>
+                       <BreadcrumbItem active>Italian</BreadcrumbItem>
+                    </Breadcrumb>
+              </div> 
+            <div className="row  justify-content-center">
                 {recipes}
             </div>
+           </div> 
         );
     }
 }

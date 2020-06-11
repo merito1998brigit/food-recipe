@@ -26,6 +26,7 @@ class MainComponent extends Component {
     }
     
     render() {
+        const Recipes=({match})=>{}
         const RecipeList= ({match}) =>{
             if(match.params.dishname === "SouthIndian"){
                 return (
@@ -64,6 +65,7 @@ class MainComponent extends Component {
                 <Route path="/home" component={Home}/>
                 <Route exact path="/cusine" component={() =><Cusines cusine={this.state.Cusineitem}/> }/>
                 <Route path="/cusine/:dishname" component={RecipeList}/>
+                <Route path="/SouthIndian/:dishId" component={Recipes}/>
                 <Redirect to="/home"/>
                 </Switch>
                 <Footer/>
