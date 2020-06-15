@@ -14,7 +14,9 @@ function RenderItem({items}){
                               <CardText>
                                     {items.description}
                               </CardText>
+                              <Link to={`/Italian/${items.id}`}>
                               <Button>Get Recipe</Button>
+                              </Link>
                       </CardBody>
             </Card>
            

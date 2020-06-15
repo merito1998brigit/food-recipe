@@ -10,6 +10,10 @@ import {ITALIAN} from '../Shares/ItalianRecipe';
 import Italian from './Italian';
 import Chinese from './Chinese';
 import {CHINESE} from '../Shares/ChineseRecipe';
+import Southdish from  './Southdish';
+import Northdish from './Northdish';
+import Chinesedish from './Chinesedish';
+import Italiandish from './Italiandish';
 import Home from './Home'; 
 import Footer from './Footer';
 import {Switch, Route ,Redirect, Link} from 'react-router-dom';
@@ -26,7 +30,27 @@ class MainComponent extends Component {
     }
     
     render() {
-        const Recipes=({match})=>{}
+        const ItalianRecipes=({match})=>{
+            return(
+                <Italiandish recipe={this.state.italiandish.filter((recipes)=>recipes.id ===  parseInt(match.params.dishId,10))[0]}/>
+            )
+       }
+        const chineseRecipes=({match})=>{
+            return(
+                <Chinesedish recipe={this.state.chinesedish.filter((recipes)=>recipes.id ===  parseInt(match.params.dishId,10))[0]}/>
+            )
+       }
+
+        const norththRecipes=({match})=>{
+            return(
+                <Northdish recipe={this.state.northdish.filter((recipes)=>recipes.id ===  parseInt(match.params.dishId,10))[0]}/>
+            )
+       }
+        const southRecipes=({match})=>{
+             return(
+                 <Southdish recipe={this.state.southdish.filter((recipes)=>recipes.id ===  parseInt(match.params.dishId,10))[0]}/>
+             )
+        }
         const RecipeList= ({match}) =>{
             if(match.params.dishname === "SouthIndian"){
                 return (
@@ -65,7 +89,10 @@ class MainComponent extends Component {
                 <Route path="/home" component={Home}/>
                 <Route exact path="/cusine" component={() =><Cusines cusine={this.state.Cusineitem}/> }/>
                 <Route path="/cusine/:dishname" component={RecipeList}/>
-                <Route path="/SouthIndian/:dishId" component={Recipes}/>
+                <Route path="/SouthIndian/:dishId" component={southRecipes}/>
+                <Route path="/NorthIndian/:dishId" component={norththRecipes}/>
+                <Route path="/Chinese/:dishId" component={chineseRecipes}/>
+                <Route path="/Italian/:dishId" component={ItalianRecipes}/>
                 <Redirect to="/home"/>
                 </Switch>
                 <Footer/>

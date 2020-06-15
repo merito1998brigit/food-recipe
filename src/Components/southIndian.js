@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Link } from 'react-router-dom'
 import { Card,CardBody,CardImg,CardTitle,CardText, Button,Breadcrumb,BreadcrumbItem } from 'reactstrap';
-import Southdish from './Southdish';
 function RenderItem({items}){
     return(
            <Card className="shadow2">
@@ -47,7 +46,6 @@ class SouthIndian extends Component {
             <div className="row justify-content-center">
                 {recipes}
             </div>
-           <Southdish/>
          </div>
         );
     }

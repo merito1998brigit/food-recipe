@@ -8,7 +8,7 @@ function RenderDetails({details}){
      
        <Breadcrumb  className="position-fixed">
                 <BreadcrumbItem><Link to='/cusine'>Cusines</Link></BreadcrumbItem>
-                <BreadcrumbItem ><Link to='/cusine/SouthIndian'>SouthIndian Recipes</Link></BreadcrumbItem>
+                <BreadcrumbItem ><Link to='/cusine/Chinese'>Chinese Recipes</Link></BreadcrumbItem>
                <BreadcrumbItem active>{details.name}</BreadcrumbItem>
          </Breadcrumb>
       
@@ -96,7 +96,7 @@ function RenderMethods({item}){
        </div>
    )
 }
-function Southdish(props) {
+function Chinese(props) {
     if(props.recipe == null){
         return(
             <div>
@@ -117,4 +117,4 @@ function Southdish(props) {
   
 }
 
-export default Southdish;
+export default Chinese;

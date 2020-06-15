@@ -8,7 +8,7 @@ function RenderDetails({details}){
      
        <Breadcrumb  className="position-fixed">
                 <BreadcrumbItem><Link to='/cusine'>Cusines</Link></BreadcrumbItem>
-                <BreadcrumbItem ><Link to='/cusine/SouthIndian'>SouthIndian Recipes</Link></BreadcrumbItem>
+                <BreadcrumbItem ><Link to='/cusine/Italian'>Italian Recipes</Link></BreadcrumbItem>
                <BreadcrumbItem active>{details.name}</BreadcrumbItem>
          </Breadcrumb>
       
@@ -31,7 +31,7 @@ function RenderDetails({details}){
              
          </div>
     
-         <div className="container  bg-secondary m-0">
+         <div className="container   bg-secondary m-0">
              <img className="media-image2" src={details.image} alt={details.name}/>
              <div className="row">
                   <div className="col-12 text-center mt-1">
@@ -96,7 +96,7 @@ function RenderMethods({item}){
        </div>
    )
 }
-function Southdish(props) {
+function Italiandish(props) {
     if(props.recipe == null){
         return(
             <div>
@@ -117,4 +117,4 @@ function Southdish(props) {
   
 }
 
-export default Southdish;
+export default Italiandish;
