@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import background1 from '../assets/background1.jpg';
+import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,7 +31,11 @@ class Home extends Component {
                             
                              </div> 
                              <div className="col-12 arrowbtn ">
-                                  <span className="fa fa-angle-double-down fa-lg down"></span>
+                                 <Link to={`/cusine`}>
+                                 <Button className="bg-success">
+                                Let's Explore
+                                </Button>
+                                </Link>
                              </div>
                           
                      
